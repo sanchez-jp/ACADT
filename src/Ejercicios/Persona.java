@@ -85,7 +85,7 @@ public class Persona {
         this.peso = peso;
         this.altura = altura;
     }
-
+    
     /**
      * @return the nombre
      */
@@ -181,9 +181,9 @@ public class Persona {
      * @return TRUE si tiene 18 años o más, FALSE en caso contrario
      */
     public boolean esMayorDeEdad() {
-        if (edad >= 18) {
-            System.out.println(nombre + "es mayor de edad");
-        }
+       /* if (edad >= 18) {
+            System.out.println(nombre + " es mayor de edad");
+        }*/
         return edad >= 18;
     }
 
