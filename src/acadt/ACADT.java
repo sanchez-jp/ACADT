@@ -51,7 +51,8 @@ public class ACADT {
         System.out.println("persona generada por defecto:\n" + p);
         System.out.println(p.getDni());
         
-        //p = new Persona("Juan Pedro", 28, SEXO.M, 70, 1.60);
+        p = new Persona("Juan Pedro", 28, p.generaDNI() ,SEXO.M, 70, 1.60);
+        System.out.println(p);
     }
     
 }
