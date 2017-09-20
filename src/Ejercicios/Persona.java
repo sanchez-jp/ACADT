@@ -28,17 +28,13 @@ import java.util.Random;
  */
 public class Persona {
 
-    enum SEXO {
-        H, M
-    };
-
     private static char[] LetrasDNI
             = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N',
                 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 
     private String nombre;
     private int edad;
-    private String dni;
+    private final String dni;
     private SEXO sexo;
     private double peso;
     private double altura;
@@ -206,7 +202,7 @@ public class Persona {
      *
      * @return el DNI generado aleatoriamente
      */
-    public String generaDNI() {
+    public final String generaDNI() {
         String numDni = "";
         for (int i = 0; i < 8; i++) {
             numDni += (int) (Math.random() * (9) + 0);
