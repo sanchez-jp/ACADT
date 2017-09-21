@@ -28,10 +28,7 @@ import java.util.Random;
  */
 public class Persona {
 
-    private static char[] LetrasDNI
-            = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N',
-                'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
-
+    private static String LetrasDni = "TRWAGMYFPDXBNJZSQVHLCKE";
     private String nombre;
     private int edad;
     private final String dni;
@@ -85,7 +82,7 @@ public class Persona {
         this.peso = peso;
         this.altura = altura;
     }
-    
+
     /**
      * @return the nombre
      */
@@ -181,7 +178,7 @@ public class Persona {
      * @return TRUE si tiene 18 años o más, FALSE en caso contrario
      */
     public boolean esMayorDeEdad() {
-       /* if (edad >= 18) {
+        /* if (edad >= 18) {
             System.out.println(nombre + " es mayor de edad");
         }*/
         return edad >= 18;
@@ -194,7 +191,7 @@ public class Persona {
      * @return la letra generada
      */
     private String genLetra(int num) {
-        return String.valueOf(LetrasDNI[num % 23]);
+        return String.valueOf(LetrasDni.charAt(num % 23));
     }
 
     /**

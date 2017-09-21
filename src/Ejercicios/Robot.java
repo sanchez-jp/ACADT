@@ -66,7 +66,7 @@ public class Robot implements Comparable<Robot> {
      */
     @Override
     public String toString() {
-        return "Robot{" + "id=" + id + ", vida=" + vida + '}';
+        return "Robot(" + "ID: " + id + ", Vida: " + vida + "% ) ";
     }
 
     /**
@@ -107,8 +107,9 @@ public class Robot implements Comparable<Robot> {
 
     /**
      * Redefinición de compareTo para Robot
+     *
      * @param o robot a comparar
-     * @return 
+     * @return
      */
     @Override
     public int compareTo(Robot o) {

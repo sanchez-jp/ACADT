@@ -8,13 +8,17 @@ package Ejercicios;
 import java.util.Scanner;
 
 /**
- * EJERCICIO 2
- * Pedir dos números por teclado y decir si uno es múltiplo del otro.
+ * EJERCICIO 2 Pedir dos números por teclado y decir si uno es múltiplo del
+ * otro.
  *
  * @author alumno
  */
 public class EsMultiplo {
 
+    /**
+     * Indica si un número es múltiplo de otro. Los números son introducidos por
+     * el usuario.
+     */
     public void esMultiplo() {
         Scanner ent = new Scanner(System.in);
         System.out.print("Introduzca un número: ");
